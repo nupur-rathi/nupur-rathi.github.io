@@ -224,7 +224,7 @@ background: rgb(20,22,20);
 .about_descp{
     margin-top: 10%;
     word-wrap: break-word;
-    text-align: justify;
+    text-align: left;
     font-size: 1.4rem;
     line-height: 1.5;
 }
@@ -385,8 +385,129 @@ background: rgb(20,22,20);
 .footer{
     background-color: rgb(20,23,20);
     height: 7vh;
-    margin-bottom: 2vh;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.hide{
+    display: none !important;
+}
+
+.popup{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(2,2,2,0.9);
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popupwindow{
+    background-color: rgba(11,11,11,0.90);
+    width: 60vw;
+    height: 70vh;
+    border-radius: 8px;
+    box-sizing: border-box;
+    overflow: auto;
+    padding: 0 2% 2% 2%;
+    border: 1px solid rgb(20,23,20);
+    box-sizing: border-box;
+}
+
+.closepop{
+    margin-top: 1%;
+    height: 5vh;
+    width: 100%;
+    margin-bottom: 2%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.popcls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    border-radius: 40%;
+    padding: 1%; 
+    border: 2px solid rgb(200,200,200);
+    cursor: pointer;
+}
+
+.popimgdiv{
+    width: 100%;
+    height: 95%;
+    overflow: hidden;
+    margin-bottom: 5%;
+}
+
+.popimg{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.popdescp{
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.projhead{
+    margin-bottom: 2%;
+}
+
+.projdes{
+    height: auto;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-bottom: 3%;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgb(20,23,20);
+}
+
+.projtools{
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 2vh;
+}
+
+.tool{
+    margin-right: 2%;
+    margin-bottom: 2%;
+    height: 5vh;
+    width: auto;
+    padding: 0 1% 0 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 1px solid rgb(20,23,20);
+    box-sizing: border-box;
+    background-color: rgb(15,15,15);
+}
+
+.knowmore{
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+    height: 5vh;
+    width: 25%;
+    border-radius: 8px;
+    background-color: var(--blue);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 1% 2% 1% 2%;
+    text-decoration: none;
+}
+
+.knowmore:hover{
+    background-color: rgba(193, 41, 46, 0.2);
 }

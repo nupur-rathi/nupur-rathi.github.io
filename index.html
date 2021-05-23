@@ -22,16 +22,16 @@
             </div>
             <div class="navMain">
                 <div class="navItems">
-                    <a class="navItemsLink home">Home</a>
+                    <a id="homeid" class="navItemsLink home">Home</a>
                 </div>
                 <div class="navItems">
-                    <a class="navItemsLink">About</a>
+                    <a id="aboutid" class="navItemsLink">About</a>
                 </div>
                 <div class="navItems">
                     <a class="navItemsLink" href="./assets/Resume.pdf" target="_blank" download>Resume</a>
                 </div>
                 <div class="navItems">
-                    <a class="navItemsLink">Projects</a>
+                    <a id="projectid" class="navItemsLink">Projects</a>
                 </div>
                 <div class="navItems">
                     <a class="navItemsLink", href="https://github.com/nupur-rathi", target="_blank">Github</a>                   
@@ -40,7 +40,7 @@
                     <a class="navItemsLink", href="https://www.linkedin.com/in/nupur-rathi-b646451b4/", target="_blank">Linkedin</a>                   
                 </div>
                 <div class="navItems">
-                    <a class="navItemsLink">Contact</a>                   
+                    <a id="contactid" class="navItemsLink">Contact</a>                   
                 </div>
             </div>
         </div>
@@ -79,15 +79,15 @@
             <div class="project">
                 <h2 id="projhead">My Projects</h2>
                 <div class="projects">
-                    <div class="projitem">
+                    <div id="risccard" class="projitem">
                         <img class="pimgs" src="./assets/riscv.PNG">
                         <p class="pnames">RISCV-SIMULATOR</p>
                     </div>
-                    <div class="projitem">
+                    <div id="webcard" class="projitem">
                         <img class="pimgs" src="./assets/webpaper.PNG">
                         <p class="pnames">WEBPAPER</p>
                     </div>
-                    <div class="projitem">
+                    <div id="pecard" class="projitem">
                         <img class="pimgs" src="./assets/p_e.PNG">
                         <p class="pnames">PHOTO-EDITOR</p>
                     </div>
@@ -118,9 +118,64 @@
             
         </div>
         <div class="footer">Nupur Rathi © 2021
-         </div>
+        </div>
     </div>
 
-    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
-  <script type="text/javascript"></script> -->
+    <div id="riscpop" class="popup hide">
+        <div class="popupwindow">
+            <div class="closepop"><span class="popcls">&#10006;</span></div>
+            <div class="popimgdiv">
+                <img class="popimg" src = "./assets/riscv.PNG">
+            </div>
+            <div class="popdescp">
+                <h2 class="projhead">RISC-V ISA Simulator</h2>
+                <p class="projdes">Developed pipelined and non-pipelined versions of RISC V-ISA simulator for the execution of machine instructions with data-forwarding, bit-prediction and interstate caches.</p>
+                <div class="projtools">
+                    <span class="tool">python</span>
+                    <span class="tool">PYQT</span>
+                </div>
+                <a class="knowmore">Know more...</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="webpop" class="popup hide">
+        <div class="popupwindow">
+            <div class="closepop"><span class="popcls">&#10006;</span></div>
+            <div class="popimgdiv">
+                <img class="popimg" src = "./assets/webpaper.PNG">
+            </div>
+            <div class="popdescp">
+                <h2 class="projhead">WEBPAPER</h2>
+                <p class="projdes">An online webpaper using html5, css and javascript. It uses the newsapi.org for news</p>
+                <div class="projtools">
+                    <span class="tool">HTML5</span>
+                    <span class="tool">CSS</span>
+                    <span class="tool">JAVASCRIPT</span>
+                </div>
+                <a class="knowmore" href="https://webpaper-2fcc4.web.app/"  target="_blank">Know more...</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="pepop" class="popup hide">
+        <div class="popupwindow">
+            <div class="closepop"><span class="popcls">&#10006;</span></div>
+            <div class="popimgdiv">
+                <img class="popimg" src = "./assets/p_e.PNG">
+            </div>
+            <div class="popdescp">
+                <h2 class="projhead">PHOTO EDITOR</h2>
+                <p class="projdes">Photo editor made in python using openCV library for image processing and Tkinter library for GUI</p>
+                <div class="projtools">
+                    <span class="tool">python</span>
+                    <span class="tool">OpenCV</span>
+                    <span class="tool">Tkinter</span>
+                </div>
+                <a class="knowmore">Know more...</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="./scripts/script.js"></script>
 </body>
