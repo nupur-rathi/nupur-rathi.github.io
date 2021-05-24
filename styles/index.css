@@ -367,6 +367,7 @@ background: rgb(20,22,20);
     align-items: center;
     justify-content: center;
     height: 45px;
+    padding: 2% 0 2% 0;
     font-size: 1rem;
     /* color: #020202; */
     color: FEFEFE;
@@ -507,7 +508,7 @@ background: rgb(20,22,20);
     background-color: rgba(193, 41, 46, 0.2);
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1024px) {
 
 .navBar{
     width: 100vw !important;
@@ -575,6 +576,7 @@ background: rgb(20,22,20);
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
+    height: 90vh;
 }
 
 .projects{
@@ -771,5 +773,45 @@ background: rgb(20,22,20);
 .hidemenu{
     display: none;
 }
+
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 600px) {
+
+    .projects{
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 40px;
+    }
+
+    .menu{
+        width: 6vw;
+        padding-top: 1%; 
+    }
+
+    .hi, .what{
+        font-size: 3rem;
+    }
+
+    .name{
+        font-size: 6rem;
+    }
+
+    .homeMain{
+        padding-top: 40% !important;
+        background-size: cover;
+    }
+
+    .aboutme{
+        min-height: 50vh;
+        margin-bottom: 0%;
+    }
+
+    .project{
+        height: auto;
+    }
+
+    .contactMain{
+        padding-top: 0;
+    }
 
 }
