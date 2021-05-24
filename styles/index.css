@@ -61,14 +61,14 @@ background: rgb(20,22,20);
     flex-direction: column;
     background-color: var(--black_back);
     width: 100%;
-    max-width: 1200px;
+    max-width: 1280px;
     margin: 0 auto;
 }
 
 .navBar{
     height: 8vh;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1280px;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
