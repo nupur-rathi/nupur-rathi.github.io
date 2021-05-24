@@ -60,14 +60,14 @@ background: rgb(20,22,20);
     flex-direction: column;
     background-color: var(--black_back);
     width: 100%;
-    max-width: 80%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .navBar{
     height: 8vh;
     width: 100%;
-    max-width: 80%;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -244,15 +244,15 @@ background: rgb(20,22,20);
     padding-top: 3%;
     box-sizing: border-box;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: auto;
     padding-bottom: 8%;
     height: auto;
 }
 
 .projitem{
-    width: 20vw;
-    height: 20vh;
+    width: 300px;
+    height: 150px;
     border-radius: 8px;
     box-sizing: border-box;
     transition: var(--transition-duration);
