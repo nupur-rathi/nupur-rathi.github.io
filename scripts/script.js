@@ -20,10 +20,20 @@ const pecard = document.querySelector("#pecard");
 const pepop = document.querySelector("#pepop");
 
 const menu = document.querySelector(".menu");
+const navMain = document.querySelector(".navMain");
+const navItems = document.querySelectorAll(".menuitems");
 
 menu.addEventListener('click', function (e) {
     menu.classList.toggle("change");
+    navMain.classList.toggle("hidemenu");
 });
+
+navItems.forEach(function(item){
+    item.addEventListener('click', function(e){
+    menu.classList.toggle("change");
+    navMain.classList.toggle("hidemenu");
+})});
+
 
 for(let i=0; i<contactid.length; i=i+1)
 {
