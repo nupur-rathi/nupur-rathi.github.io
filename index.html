@@ -108,18 +108,19 @@
                 </div>
                 <div class="contact-body">
                     <div class="smallinp">
-                        <label class="cont-label"><i class="icons material-icons">person</i>NAME</label>
-                        <input class="inp" type="text">
+                        <label class="cont-label"><i class="icons material-icons">person</i>NAME<label class="err errname"></label></label>
+                        <input class="inp sendername" type="text">
                     </div>
                     <div class="smallinp">
-                        <label class="cont-label">@ EMAIL</label>
-                        <input class="inp" type="text">
+                        <label class="cont-label">@ EMAIL<label class="err errmail"></label></label>
+                        <input class="inp sendermail" type="text">
                     </div>
                     <div class="biginp">
-                        <label class="cont-label"><i class="icons fa fa-send"></i>MESSAGE</label>
-                        <textarea class="text" type="text"></textarea>
+                        <label class="cont-label"><i class="icons fa fa-send"></i>MESSAGE<label class="err errmssg"></label></label>
+                        <textarea class="text sendermssg" type="text"></textarea>
                     </div>
                     <button class="sendmssg">SEND  MESSAGE</button>
+                    <label class="succmssg"></label>
                 </div>
             </div>
             
@@ -184,5 +185,6 @@
         </div>
     </div>
 
-    <script src="./scripts/script.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase.js"></script>
+    <script src="./scripts/script.js"></script> 
 </body>

@@ -264,7 +264,7 @@ background: rgb(20,22,20);
 
 .contactMain{
     box-sizing: border-box;
-    min-height: 90vh;
+    min-height: 95vh;
     border-top: 1px solid rgb(20,23,20);
     display: flex;
     padding: 8% 0 8% 0;
@@ -307,6 +307,24 @@ background: rgb(20,22,20);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.err{
+    color: var(--blue);
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 4%;
+}
+
+.succmssg{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    font-size: 1.2rem;
 }
 
 .smallinp{
@@ -372,6 +390,12 @@ background: rgb(20,22,20);
     /* color: #020202; */
     color: FEFEFE;
     font-weight: 700;
+    transition: var(--transition-duration);
+    cursor: pointer;   
+}
+
+.sendmssg:hover{
+    transform: scale(1.009);   
 }
 
 .footer{
