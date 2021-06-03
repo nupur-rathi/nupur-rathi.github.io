@@ -16,6 +16,9 @@ const riscpop = document.querySelector("#riscpop");
 const webcard = document.querySelector("#webcard");
 const webpop = document.querySelector("#webpop");
 
+const apspcard = document.querySelector("#apspcard");
+const apsppop = document.querySelector("#apsppop");
+
 const pecard = document.querySelector("#pecard");
 const pepop = document.querySelector("#pepop");
 
@@ -75,6 +78,10 @@ risccard.addEventListener('click', function(e){
 
 webcard.addEventListener('click', function(e){
     webpop.classList.remove('hide');
+});
+
+apspcard.addEventListener('click', function(e){
+    apsppop.classList.remove('hide');
 });
 
 pecard.addEventListener('click', function(e){

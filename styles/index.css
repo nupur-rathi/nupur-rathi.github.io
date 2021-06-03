@@ -225,8 +225,9 @@ background: rgb(20,22,20);
     padding-top: 3%;
     box-sizing: border-box;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: auto;
+    grid-row-gap: 10%;
     padding-bottom: 8%;
     height: auto;
 }
@@ -601,7 +602,7 @@ background: rgb(20,22,20);
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
-    height: 90vh;
+    height: auto;
 }
 
 .projects{
@@ -799,6 +800,13 @@ background: rgb(20,22,20);
     display: none;
 }
 
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1024px){
+    .projects{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 40px;
+    }
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 600px) {
